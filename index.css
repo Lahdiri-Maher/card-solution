@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(252, 242, 228);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  height: 600px;
+  width: 400px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+img {
+  border-radius: 20px 20px 0px 0px;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-container {
+  border-radius: 00px 0px 20px 20px;
+
+  background-color: white;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+.header {
+  line-height: 1.8rem;
+}
+.description {
+  color: gray;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+.title {
+  font-family: serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: gray;
+}
+button {
+  background-color: rgb(20, 122, 20);
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+}
+
+.break::before {
+  content: "\a";
+  white-space: pre;
+}
+.price {
+  color: rgb(20, 122, 20);
+}
+.span {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9rem;
+  display: block;
+  float: right;
+  margin-right: 150px;
+  margin-top: 7px;
+}
+
+.button-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+button {
+  color: white;
+}
+i {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    height: 400px;
+    width: 600px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-container {
+    border-radius: 0px 20px 20px 0px;
+  }
